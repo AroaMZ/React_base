@@ -1,0 +1,26 @@
+[
+    {
+        "id": 35,
+        "name": "fdasf",
+        "price": "Book",
+        "imgUrl": 1,
+        "prueba": false 
+        
+    },
+    {
+        "id": 40,
+        "name": "fdas",
+        "price": "Book",
+        "imgUrl": 1,
+        "prueba": false 
+        
+    },
+    {
+        "id": 50,
+        "name": "fdas",
+        "price": "Book",
+        "imgUrl": 1,
+        "prueba": false 
+        
+    }
+]

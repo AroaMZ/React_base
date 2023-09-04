@@ -1,18 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { CarritoCompraPage } from "./carritoCompra";
+
 import { NavBar } from "./components/Navbar";
-import { HelloWorld } from "./components/Hello";
+
+import { ItemList } from "./components/ItemList";
+import { CartContent } from "./components/CartContent";
+import { ShoppingCartProvider } from "./contexts/ShoppingCartContext";
+
 export const App = () => {
-    return (
-        <Router>
-            <NavBar />
-            <Routes>
-                
-           <Route path="/" element = {<HelloWorld />} />
-            </Routes>
-           
-        </Router>
-    )
-}
+  return (
+    <ShoppingCartProvider>
+      <Router>
+        <NavBar />
 
-
+        <Routes>
+          <Route path="/" element={<ItemList />} />
+          <Route path="/cart" element={<CartContent />} />
+        </Routes>
+      </Router>
+    </ShoppingCartProvider>
+  );
+};
